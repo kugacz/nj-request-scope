@@ -1,2 +1,2 @@
 # nj-request-scope
-Performant request scope dependency injection for NestJS framework
+Performant express request scope dependency injection for NestJS framework

@@ -1,0 +1,54 @@
+{
+  "name": "nj-request-scope",
+  "version": "0.0.1",
+  "description": "Performant express request scope dependency injection for NestJS framework",
+  "main": "lib/index.js",
+  "files": [
+    "/lib"
+  ],
+  "scripts": {
+    "build": "run-s lint compile",
+    "compile": "tsc",
+    "format": "prettier --write src",
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint src --ext .js,.jsx,.ts,.tsx --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kugacz/nj-request-scope.git"
+  },
+  "keywords": [
+    "request",
+    "scope",
+    "nestjs"
+  ],
+  "author": "Marek.Kugacz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kugacz/nj-request-scope/issues"
+  },
+  "homepage": "https://github.com/kugacz/nj-request-scope#readme",
+  "dependencies": {
+    "@nestjs/common": "^8.1.2",
+    "@nestjs/core": "^8.1.2",
+    "@nestjs/platform-express": "^8.1.2",
+    "express-http-context": "^1.2.4",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.4.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.11.6",
+    "@typescript-eslint/eslint-plugin": "^5.3.0",
+    "@typescript-eslint/parser": "^5.3.0",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard-with-typescript": "^21.0.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "2.4.1",
+    "typescript": "^4.4.4"
+  }
+}
