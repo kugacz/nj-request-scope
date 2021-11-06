@@ -37,7 +37,7 @@ export class RequestScopeService {
 
 ## Limitations
 Proxy handler implements only most common methods: ```get```, ```has```, ```set```. If you need other methods implemented please feel free to contribute. 
-[ProxyHandler implementation](https://github.com/kugacz/nj-request-scope/blob/main/src/util/dynamic.object.handler.ts)
+[ProxyHandler implementation](https://github.com/kugacz/nj-request-scope/blob/main/src/util/dynamic.object.handler.factory.ts)
 
 ## Example project
 [https://github.com/kugacz/nj-request-scope-example](https://github.com/kugacz/nj-request-scope-example)
