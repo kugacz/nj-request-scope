@@ -1,6 +1,6 @@
 // this high abstract handler implements ProxyHandler, and TSLints tries to force more detailed typing
 /* eslint-disable @typescript-eslint/ban-types */
-export function dynamicObjectHandler<T extends object>(instanceResolver: () => T): ProxyHandler<T> {
+export function createDynamicObjectHandler<T extends object>(instanceResolver: () => T): ProxyHandler<T> {
     return {
         apply(target: T, thisArg: any, argArray: Array<any>): any {
             throw new NotImplementedException();

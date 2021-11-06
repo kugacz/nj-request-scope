@@ -1,4 +1,4 @@
-import { dynamicObjectHandler } from './util/dynamic.object.handler';
+import { createDynamicObjectHandler } from './util/dynamic.object.handler.factory';
 import { getOrCreateRequestScopeObject, isProcessingRequest } from './util/request.scope.storage';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -23,7 +23,7 @@ function prepareRequestScopeConstructor<T extends Constructor<T>>(constructor: T
             }
             return getOrCreateRequestScopeObject(constructor.prototype.constructor.name, () => new constructor(...args));
         };
-        return new Proxy({} as any, dynamicObjectHandler(getInstance));
+        return new Proxy({} as any, createDynamicObjectHandler(getInstance));
     };
 }
 
