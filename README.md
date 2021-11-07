@@ -16,6 +16,8 @@ npm install nj-request-scope
 ## Usage
 To use nj-request-scope in NestJS module you have to add import of ```RequestScopeModule``` in the module class decorator:
 ```typescript
+import { RequestScopeModule } from 'nj-request-scope';
+
 @Module({
     imports: [RequestScopeModule],
 })
@@ -25,11 +27,15 @@ Next, there are two ways of using nj-request-scope.
 
 1. Inject express request object into class constructor with ```REQUEST_PROVIDER``` token:
 ```typescript
+import { REQUEST_PROVIDER } from 'nj-request-scope';
+[...]
 constructor(@Inject(REQUEST_PROVIDER) private readonly request: Request) {}
 ```
 
 2. Change class inject scope to request-scope with ```@RequestScope()``` decorator:
 ```typescript
+import { RequestScope } from 'nj-request-scope';
+
 @Injectable()
 @RequestScope()
 export class RequestScopeService {
