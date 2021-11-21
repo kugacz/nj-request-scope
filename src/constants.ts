@@ -1,1 +1,1 @@
-export const REQUEST_PROVIDER = 'REQUEST_PROVIDER';
+export const NJRS_REQUEST = 'NJRS_REQUEST';

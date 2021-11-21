@@ -25,11 +25,11 @@ import { RequestScopeModule } from 'nj-request-scope';
 
 Next, there are two ways of using nj-request-scope.
 
-1. Inject express request object into class constructor with ```REQUEST_PROVIDER``` token:
+1. Inject express request object into class constructor with ```NJRS_REQUEST``` token:
 ```typescript
-import { REQUEST_PROVIDER } from 'nj-request-scope';
+import { NJRS_REQUEST } from 'nj-request-scope';
 [...]
-constructor(@Inject(REQUEST_PROVIDER) private readonly request: Request) {}
+constructor(@Inject(NJRS_REQUEST) private readonly request: Request) {}
 ```
 
 2. Change class inject scope to request-scope with ```@RequestScope()``` decorator:
