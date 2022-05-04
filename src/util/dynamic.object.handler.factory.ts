@@ -21,7 +21,7 @@ export function createDynamicObjectHandler<T extends object>(instanceResolver: (
             throw new NotImplementedException();
         },
         getPrototypeOf(target: T): object | null {
-            throw new NotImplementedException();
+            return Object.getPrototypeOf(instanceResolver());
         },
         has(target: T, p: string | symbol): boolean {
             return !!instanceResolver()[p];
