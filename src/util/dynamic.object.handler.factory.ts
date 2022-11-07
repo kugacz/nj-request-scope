@@ -18,7 +18,7 @@ export function createDynamicObjectHandler<T extends object>(instanceResolver: (
             return instanceResolver()[p];
         },
         getOwnPropertyDescriptor(target: T, p: string | symbol): PropertyDescriptor | undefined {
-            throw new NotImplementedException();
+            return Object.getOwnPropertyDescriptor(instanceResolver(), p);
         },
         getPrototypeOf(target: T): object | null {
             return Object.getPrototypeOf(instanceResolver());
@@ -30,7 +30,7 @@ export function createDynamicObjectHandler<T extends object>(instanceResolver: (
             throw new NotImplementedException();
         },
         ownKeys(target: T): ArrayLike<string | symbol> {
-            throw new NotImplementedException();
+            return Object.keys(instanceResolver());
         },
         preventExtensions(target: T): boolean {
             throw new NotImplementedException();
