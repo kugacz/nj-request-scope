@@ -47,5 +47,7 @@ function copyReflectValues(
     getter: (metadataKey: any, source: Record<string, unknown>) => any,
     setter: (metadataKey: any, metadataValue: any, target: Record<string, unknown>) => void,
 ): void {
-    keys(source).forEach((key) => setter(key, getter(key, source), target));
+    keys(source).forEach((key) => {
+        setter(key, getter(key, source), target);
+    });
 }
