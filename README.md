@@ -13,6 +13,8 @@ This solution is based on the build-in javascript Proxy design pattern. For ever
 npm install nj-request-scope
 ```
 
+nj-request-scope was tested with NestJs 8.x & 9.x
+
 ## Usage
 To use nj-request-scope in NestJS module you have to add import of ```RequestScopeModule``` in the module class decorator:
 ```typescript
