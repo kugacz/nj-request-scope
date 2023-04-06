@@ -1,6 +1,6 @@
 import * as httpContext from 'express-http-context';
-import { Injectable, NestMiddleware } from '@nestjs/common';
-import { NextFunction, Request, Response } from 'express';
+import { Injectable, type NestMiddleware } from '@nestjs/common';
+import { type NextFunction, type Request, type Response } from 'express';
 import { setRequest } from './request.scope.storage';
 
 @Injectable()

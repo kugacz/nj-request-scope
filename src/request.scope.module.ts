@@ -1,4 +1,4 @@
-import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
+import { type MiddlewareConsumer, Module, type NestModule } from '@nestjs/common';
 import { requestScopeFactory } from './util/request.scope.factory';
 import { NJRS_REQUEST } from './constants';
 import { RequestScopeMiddleware } from './util/request.scope.middleware';

@@ -1,5 +1,5 @@
 import * as httpContext from 'express-http-context';
-import { Request } from 'express';
+import { type Request } from 'express';
 
 const HTTP_CONTEXT_REQUEST_SCOPE = 'HTTP_CONTEXT_REQUEST_SCOPE';
 const REQUEST_SCOPE_CLASS_PREFIX = 'REQUEST_SCOPE_CLASS_';

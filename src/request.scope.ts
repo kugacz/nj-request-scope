@@ -15,7 +15,7 @@ export function RequestScope(): <T extends Constructor<T>>(constructor: T) => T 
 function prepareRequestScopeConstructor<T extends Constructor<T>>(constructor: T): (...args) => T {
     let defaultInstance = null;
     // Arrow functions can not be used as constructors
-    // tslint:disable-next-line:only-arrow-functions
+   
     return function (...args): T {
         const getInstance = (): T => {
             if (!isProcessingRequest()) {
