@@ -19,7 +19,7 @@ There are also a few peer dependencies that have to be satisfied:
     "@nestjs/core": ">8.0.0",
     "@nestjs/platform-express": ">8.0.0",
     "express-http-context": "^1.2.4",
-    "reflect-metadata": "^0.1.12",
+    "reflect-metadata": ">0.1.12",
     "rxjs": "^7.1.0"
 ```
 **Especially `express-http-context` which is not required by NestJS by default.** 
