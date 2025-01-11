@@ -1,6 +1,6 @@
 {
   "name": "nj-request-scope",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Performant express request scope dependency injection for NestJS framework",
   "main": "lib/index.js",
   "files": [
