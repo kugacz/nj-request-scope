@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-return */
 import * as httpContext from 'express-http-context';
-import { type Request } from 'express';
+import type { Request } from 'express';
 
 const HTTP_CONTEXT_REQUEST_SCOPE = 'HTTP_CONTEXT_REQUEST_SCOPE';
 const REQUEST_SCOPE_CLASS_PREFIX = 'REQUEST_SCOPE_CLASS_';
@@ -12,7 +13,7 @@ export function setRequest(request: Request): void {
     httpContext.set(HTTP_CONTEXT_REQUEST_SCOPE, request);
 }
 
-export function getRequest(): Request {
+export function getRequest(): Request | undefined {
     return httpContext.get(HTTP_CONTEXT_REQUEST_SCOPE);
 }
 

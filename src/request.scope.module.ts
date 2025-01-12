@@ -13,6 +13,7 @@ import { RequestScopeMiddleware } from './util/request.scope.middleware';
     exports: [NJRS_REQUEST],
 })
 export class RequestScopeModule implements NestModule {
+    // eslint-disable-next-line @typescript-eslint/class-methods-use-this, @typescript-eslint/no-explicit-any
     configure(consumer: MiddlewareConsumer): any {
         consumer.apply(RequestScopeMiddleware).forRoutes('*');
     }
