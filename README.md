@@ -18,13 +18,13 @@ There are also a few peer dependencies that have to be satisfied:
     "@nestjs/common": ">8.0.0",
     "@nestjs/core": ">8.0.0",
     "@nestjs/platform-express": ">8.0.0",
-    "express-http-context": "^1.2.4",
+    "express-http-context": ">1.2.4",
     "reflect-metadata": ">0.1.12",
     "rxjs": "^7.1.0"
 ```
 **Especially `express-http-context` which is not required by NestJS by default.** 
 
-nj-request-scope was tested with NestJs 8.x & 9.x & 10.x
+nj-request-scope was tested with NestJs 8.x & 9.x & 10.x & 11.x versions.
 
 ## Usage
 To use nj-request-scope in NestJS module you have to add import of ```RequestScopeModule``` in the module class decorator:
